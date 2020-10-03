@@ -40,6 +40,11 @@ def ej1():
     # Colocar la leyenda y el label con el nombre de la función
     # Darle color a la línea a su elección
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.plot(x,y)
+    plt.show()
+
 
 def ej2():
     # Line Plot
@@ -64,7 +69,12 @@ def ej2():
 
     # Cada función dibujarla con un color distinto
     # a su elección
+    fig = plt.figure()
+    ax = fig.add_subplot()
 
+    ax.plot(x,y1)
+    ax.plot(x,y2)
+    plt.show()
 
 def ej3():
     # Scatter Plot
@@ -84,6 +94,11 @@ def ej3():
     # cada gráfico
 
     # Elegir un marker a elección
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.scatter(x,y)
+    plt.show()
 
 
 def ej4():
@@ -126,8 +141,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    # ej2()
+    # ej1()
     # ej2()
     # ej3()
     # ej4()
