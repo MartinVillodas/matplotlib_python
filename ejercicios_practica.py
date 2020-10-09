@@ -138,10 +138,34 @@ def ej4():
 
     # Colocar una grilla a elección
 
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2 , 2 , 1)
+    ax2 = fig.add_subplot(2 , 2 , 2)
+    ax3 = fig.add_subplot(2 , 2 , 3)
+    ax4 = fig.add_subplot(2 , 2 , 4)
+
+    ax1.plot(x , y1)
+    ax1.set_title("Funcion cuadratica")
+    ax1.legend()
+
+    ax2.plot(x , y2)
+    ax2.set_title("Funcion cubica")
+    ax2.legend()
+
+    ax3.plot(x , y3)
+    ax3.set_title("X a la cuarta")
+    ax3.legend()
+
+    ax4.plot(x , y4)
+    ax4.set_title("Raiz cuadrada de X")
+    ax4.legend()
+
+    plt.show()
+
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     # ej1()
     # ej2()
     # ej3()
-    # ej4()
+    ej4()
